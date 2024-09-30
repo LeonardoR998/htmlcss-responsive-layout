@@ -35,6 +35,10 @@ img {
   display: none;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
 a {
   color: white;
 }
@@ -57,13 +61,14 @@ a {
   padding-top: 40px;
 }
 
-.p-hero {
+.hero .p-hero {
   color: #aaa;
   padding-bottom: 10px;
 }
 
-.vid {
+.hero .vid {
   padding-top: 10px;
+  flex-grow: 1;
 }
 
 .box-hero {
@@ -79,6 +84,11 @@ a {
   padding: 20px 0;
 }
 
+.button > .container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .logo-bt {
   cursor: pointer;
   padding: 6px 0;
@@ -88,7 +98,7 @@ a {
 
   background-color: white;
   border: 1px solid white;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .presentation {
@@ -133,4 +143,42 @@ a {
 
 .footer .item {
   margin: 0 10px;
+}
+
+/* ####### MEDIA QUERY ########## */
+
+@media screen and (min-width: 768px) {
+  .header-text {
+    text-align: left;
+  }
+
+  .box-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 0;
+    gap: 2rem;
+  }
+
+  .hero-tradition {
+    display: inline;
+  }
+
+  .logo-bt {
+    width: 80px;
+    margin: 0px 10px;
+  }
+
+  .banner {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
 }
