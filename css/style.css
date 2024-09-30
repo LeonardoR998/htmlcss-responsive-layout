@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #f6f5f3;
+}
+
 /* # UTILS */
 
 .container {
@@ -13,4 +17,69 @@
   padding: 0 10px;
   width: 1000px;
   max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+  background-color: white;
+  padding: 15px 0;
+}
+
+.header .header-text {
+  color: #ff9614;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 40px;
+}
+
+.p-hero {
+  color: #aaa;
+  padding-bottom: 10px;
+}
+
+.vid {
+  padding-top: 10px;
+}
+
+.box-hero {
+  background-color: white;
+  padding: 20px;
+}
+
+.p-box {
+  padding: 10px 0;
+}
+
+.button {
+  padding: 20px 0;
+}
+
+.logo-bt {
+  width: 20px;
+  height: 20px;
+  margin: 0px 40px;
+
+  background-color: white;
+  border-radius: 50%;
 }
