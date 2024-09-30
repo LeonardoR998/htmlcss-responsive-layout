@@ -10,6 +10,10 @@ body {
   background-color: #f6f5f3;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* # UTILS */
 
 .container {
@@ -32,7 +36,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  color: white;
 }
 
 /* HEADER */
@@ -76,10 +80,57 @@ a {
 }
 
 .logo-bt {
-  width: 20px;
-  height: 20px;
+  cursor: pointer;
+  padding: 6px 0;
+  width: 29px;
+  height: 30px;
   margin: 0px 40px;
 
   background-color: white;
+  border: 1px solid white;
   border-radius: 50%;
+}
+
+.presentation {
+  padding: 20px 0;
+}
+
+.image {
+  padding: 20px 0;
+}
+
+.image-tù {
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 150px;
+  background-color: #7c69a4;
+  color: white;
+}
+
+.footer .list-item,
+.title-footer {
+  list-style-type: none;
+  margin-left: 60px;
+  padding-top: 20px;
+}
+
+.footer .list-item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.footer .title-ft {
+  margin-left: 60px;
+  padding: 10px 0;
+}
+
+.footer .item {
+  margin: 0 10px;
 }
